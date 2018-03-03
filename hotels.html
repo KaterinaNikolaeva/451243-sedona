@@ -7,23 +7,125 @@
   </head>
   <body>
     <header class="main-header">
-		<nav class="main-navigation">
-          <a href="" class="main-header-logo">
-          	<img src="http://placehold.it/100x100" alt="Логотип">
-          </a>
-          <div class="main-navigation-wrapper">
-		    <table class="site-navigation">
-              <tr>
-            	  <td><a href="index.html">Информация</a></td>
-            	  <td><a href="gallery.html">Фото и видео</a></td>
-            	  <td><a href="map.html">Карта штата</a></td>
-            	  <td><a href="">Гостиницы</a></td>
-              </tr>
-		    </table>
-		  </div>
-		</nav>
+		  <nav class="main-navigation">
+        <a href="index.html" class="main-header-logo">
+          <img src="http://placehold.it/100x100" alt="Логотип">
+        </a>
+        <div class="main-navigation-wrapper">
+		      <table class="site-navigation">
+            <tr>
+            	<td><a href="index.html">Информация</a></td>
+            	<td><a href="gallery.html">Фото и видео</a></td>
+            	<td><a href="map.html">Карта штата</a></td>
+            	<td><a href="">Гостиницы</a></td>
+            </tr>
+		      </table>
+		    </div>
+		  </nav>
     </header>
-    <main>
+    <main class="container">
+      <h1 class="visually-hidden">Гостиницы</h1>
+      <section class="filters">
+        <section class="infrastructure-filter">
+          <h3>Инфраструктура:</h3>
+          <ul>
+            <li>Бассейн</li>
+            <li>Парковка</li>
+            <li>Wi-fi</li>
+          </ul>
+        </section>
+        <section class="accommodation-filter">
+          <h3>Тип жилья:</h3>
+          <ul>
+            <li>Гостиница</li>
+            <li>Мотель</li>
+            <li>Апартаменты</li>
+          </ul>
+        </section>
+        <section class="price-filter">
+          <h3>Стоимость в сутки (р):</h3>
+          <ul>
+            <li>от 0</li>
+            <li>до 3000</li>
+          </ul>
+          <a href="#">Показать</a>
+        </section>
+      </section>
+      <div class="container">
+        <p>Найдено: 3</p>
+        <section class="sorting">
+          <h4>Сортировка:</h4>
+          <ul>
+            <li>По цене</li>
+            <li>По типу</li>
+            <li>По рейтингу</li>
+          </ul>
+          <img src="http://placehold.it/50x20">
+        </section> 
+      </div>
+      <h2 class="visually-hidden">Результаты поиска</h2>
+      <section class="search-results">
+        <section class="search-result-1">
+          <img src="http://placehold.it/150x100" alt="Amara Resort & SPA">
+          <p>Amara Resort & SPA</p>
+          <div class="container">
+            <table>
+              <tr>
+                <td>Гостиница</td>
+                <td>от 4000 р.</td>
+              </tr>
+              <tr>
+                <td><a href="#">Подробнее</a></td>
+                <td><a href="#">Забронировать</a></td>
+              </tr>
+            </table>
+          </div>
+          <section class="rating">
+            <img src="http://placehold.it/150x20" alt="4 звезды">
+            <p>Рейтинг: 8,5</p>
+          </section>
+        </section>
+        <section class="search-result-2">
+          <img src="http://placehold.it/150x100" alt="Desert Quail INN">
+          <p>Desert Quail INN</p>
+          <div class="container">
+            <table>
+              <tr>
+                <td>Мотель</td>
+                <td>от 3000 р.</td>
+              </tr>
+              <tr>
+                <td><a href="#">Подробнее</a></td>
+                <td><a href="#">Забронировать</a></td>
+              </tr>
+            </table>
+          </div>
+          <section class="rating">
+            <img src="http://placehold.it/150x20" alt="3 звезды">
+            <p>Рейтинг: 8,9</p>
+          </section>
+        </section>
+        <section class="search-result-3">
+          <img src="http://placehold.it/150x100" alt="Villas at Poco Diablo">
+          <p>Villas at Poco Diablo</p>
+          <div class="container">
+            <table>
+              <tr>
+                <td>Апартаменты</td>
+                <td>от 2000 р.</td>
+              </tr>
+              <tr>
+                <td><a href="#">Подробнее</a></td>
+                <td><a href="#">Забронировать</a></td>
+              </tr>
+            </table>
+          </div>
+          <section class="rating">
+            <img src="http://placehold.it/150x20" alt="2 звезды">
+            <p>Рейтинг: 9,2</p>
+          </section>
+        </section>
+      </section>
     </main>
     <footer class="main-footer">
       <p class="hashtag">#VisitSedona</p>
@@ -34,8 +136,7 @@
           <li><a href="#"><img src="http://placehold.it/50x50" alt="YouTube"></a></li>
         </ul>
       </section>
-      <p class="author">Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/100x50" alt="Логотип HTML Academy"></a>
-      </p>
+      <p class="author">Website by </p><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/100x50" alt="Логотип HTML Academy"></a>
     </footer>
   </body>
 </html>
