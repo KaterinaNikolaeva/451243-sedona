@@ -21,7 +21,7 @@
 		    </div>
 		  </nav>
       <div class="background-image">
-        <img src="http://placehold.it/500x300" alt="Welcome to the gorgeous Sedona!">
+        <img src="img/background-text.png" width="458" height="352" alt="Welcome to the gorgeous Sedona!">
       </div>
     </header>
     <main class="container">
@@ -108,22 +108,32 @@
       <p class="hashtag">#VisitSedona</p>
       <section class="social-media-buttons">
         <ul>
-          <li><a href="#"><img src="img/twitter.svg" width="17" height="15" alt="Twitter"></a></li>
-          <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
-          <li><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="YouTube"></a></li>
+          <li><a class="social-media-button" href="#"><img src="img/twitter.svg" width="17" height="15" alt="Twitter"></a></li>
+          <li><a class="social-media-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
+          <li><a class="social-media-button" href="#"><img src="img/youtube.svg" width="20" height="16" alt="YouTube"></a></li>
         </ul>
       </section>
       <p class="author">Website by </p><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a>
     </footer>
-    <section class="hotels">
-      <form action="hotels.html">
-        <ul>
-          <li>Дата заезда:</li>
-          <li>Дата выезда:</li>
-          <li>Взрослые:</li>
-          <li>Дети:</li>
-        </ul>
-        <button type="submit">Найти</button>
+    <section class="modal modal-search">
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="search-item">
+          <label for="arrival-date-field">Дата заезда:</label>
+          <input type="text" name="arrival-date" id="arrival-date-field" value=""> <!-- Может быть здесь лучше использовать type="date"? Хотя по макету больше похоже на text -->
+        </p>
+        <p class="search-item">
+          <label for="departure-date-field">Дата выезда:</label>
+          <input type="text" name="departure-date" id="departure-date-field" value="">
+        </p>
+        <p class="search-item">
+          <label for="adults-quantity-field">Взрослые:</label>
+          <input type="number" name="adults-quantity" id="adults-quantity-field" min="1" value="2">
+        </p>
+        <p class="search-item">
+          <label for="children-quantity-field">Дети:</label>
+          <input type="number" name="children-quantity" id="children-quantity-field" min="0" value="0">
+        </p>
+        <button class="button" type="submit">Найти</button>
       </form>
     </section>
   </body>

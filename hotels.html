@@ -23,34 +23,52 @@
     </header>
     <main class="container">
       <h1 class="visually-hidden">Гостиницы</h1>
-      <form action="#">
-        <fieldset class="infrastructure">
+      <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
           <legend>Инфраструктура:</legend>
             <ul>
-              <li><label><input type="checkbox" name="pool" id="pool-field" checked>Бассейн</label></li>
-              <li><label><input type="checkbox" name="parking" id="parking-field">Парковка</label></li>
-              <li><label><input type="checkbox" name="wifi" id="wifi-field">Wi-fi</label></li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="pool-filter" checked>
+                <label for="pool-filter">Бассейн</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="parking-filter">
+                <label for="parking-filter">Парковка</label>  
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wifi" id="wifi-filter">
+                <label for="wifi-filter">Wi-fi</label>
+              </li>
             </ul>
         </fieldset>
-        <fieldset class="accommodation-filter">
+        <fieldset>
           <legend>Тип жилья:</legend>
           <ul>
-            <li><label><input type="checkbox" name="hotel" id="hotel-field" checked>Гостиница</label></li>
-            <li><label><input type="checkbox" name="motel" id="motel-field" checked>Мотель</label></li>
-            <li><label><input type="checkbox" name="apartement" id="apartement-field" checked>Апартаменты</label></li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="hotel-filter" checked>
+              <label for="hotel-filter">Гостиница</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="motel-filter" checked>
+              <label for="motel-filter">Мотель</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartement" id="apartement-filter" checked>
+              <label for="apartement-filter">Апартаменты</label>
+            </li>
           </ul>
         </fieldset>
-        <fieldset class="price-filter">
+        <fieldset>
           <legend>Стоимость в сутки (р):</legend>
-          <table><!-- Пока не знаю как размечать такую форму -->
+          <table>
             <tr>
-              <td>от 0</td>
-              <td>до 3000</td>
+              <td><span>от </span><output name="min-price-output">0</output></td>
+              <td><span>до </span><output name="max-price-output">3000</output></td>
           </tr>
           </table>
-          <input type="range">
-          <input type="submit" name="results" value="Показать">
+          <input class="visually-hidden filter-range" type="range" multiple min="0" max="3000"> <!-- Не удалось сделать двойной ползунок. Его реализация возможна только с использованием JS? -->
         </fieldset>
+        <button class="filter-button button" type="submit">Показать</button>
       </form>
       <div class="container">
         <section class="sorting">
@@ -130,9 +148,9 @@
       <p class="hashtag">#VisitSedona</p>
       <section class="social-media-buttons">
         <ul>
-          <li><a href="#"><img src="img/twitter.svg" width="17" height="15" alt="Twitter"></a></li>
-          <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
-          <li><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="YouTube"></a></li>
+          <li><a class="social-media-button" href="#"><img src="img/twitter.svg" width="17" height="15" alt="Twitter"></a></li>
+          <li><a class="social-media-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
+          <li><a class="social-media-button" href="#"><img src="img/youtube.svg" width="20" height="16" alt="YouTube"></a></li>
         </ul>
       </section>
       <p class="author">Website by </p><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a>
