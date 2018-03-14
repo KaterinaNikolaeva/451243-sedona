@@ -121,25 +121,25 @@
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="search-item">
           <label for="arrival-date-field">Дата заезда:</label>
-          <input type="date" name="arrival-date" id="arrival-date-field">
+          <input class="arrival-date" type="date" name="arrival-date" id="arrival-date-field">
           <a href="#"><img class="date-button" src="img/calendar.svg" width="21" height="22" alt="Выбор даты"></a>
         </p>
         <p class="search-item">
           <label for="departure-date-field">Дата выезда:</label>
-          <input type="date" name="departure-date" id="departure-date-field">
+          <input class="departure-date" type="date" name="departure-date" id="departure-date-field">
           <a href="#"><img class="date-button" src="img/calendar.svg" width="21" height="22" alt="Выбор даты"></a>
         </p>
         <p class="search-item">
           <label for="adults-quantity-field">Взрослые:</label>
-          <button class="quantity-button" type="button">-</button>
-          <input type="number" name="adults-quantity" id="adults-quantity-field" min="1" value="2">
-          <button class="quantity-button" type="button">+</button>
+          <button class="quantity-button" type="button"><img class="minus" src="img/quantity-button-2.png" alt="Меньше"></button>
+          <input class="number" type="number" name="adults-quantity" id="adults-quantity-field" min="1" value="2">
+          <button class="quantity-button" type="button"><img class="plus" src="img/quantity-button-1.png" alt="Больше"></button>
         </p>
         <p class="search-item">
           <label for="children-quantity-field">Дети:</label>
-          <button class="quantity-button" type="button">-</button>
-          <input type="number" name="children-quantity" id="children-quantity-field" min="0" value="0">
-          <button class="quantity-button" type="button">+</button>
+          <button class="quantity-button" type="button"><img class="minus" src="img/quantity-button-2.png" alt="Меньше"></button>
+          <input class="number" type="number" name="children-quantity" id="children-quantity-field" min="0" value="0">
+          <button class="quantity-button" type="button"><img class="plus" src="img/quantity-button-1.png" alt="Больше"></button>
         </p>
         <button class="button search-button" type="submit">Найти</button>
       </form>

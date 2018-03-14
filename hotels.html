@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона - Гостиницы</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
 		  <nav class="main-navigation">
         <a href="index.html" class="main-header-logo">
@@ -24,9 +24,9 @@
     <main class="container">
       <h1 class="visually-hidden">Гостиницы</h1>
       <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset>
+        <fieldset class="filter">
           <legend>Инфраструктура:</legend>
-            <ul>
+            <ul class="filter-list">
               <li class="filter-option">
                 <input class="filter-input filter-input-checkbox" type="checkbox" name="pool" id="pool-filter" checked>
                 <label for="pool-filter">Бассейн</label>
@@ -41,9 +41,9 @@
               </li>
             </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="filter">
           <legend>Тип жилья:</legend>
-          <ul>
+          <ul class="filter-list">
             <li class="filter-option">
               <input class="filter-input filter-input-checkbox" type="checkbox" name="hotel" id="hotel-filter" checked>
               <label for="hotel-filter">Гостиница</label>
@@ -58,7 +58,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="filter">
           <legend>Стоимость в сутки (р):</legend>
           <table>
             <tr>
@@ -68,13 +68,13 @@
           </table>
           <input class="filter-range" type="range" multiple min="0" max="3000">
         </fieldset>
-        <button class="filter-button button" type="submit">Показать</button>
+        <button class="filter-button" type="submit">Показать</button>
       </form>
       <div class="container">
         <section class="sorting">
           <p>Найдено: <span class="quantity">3</span></p>
           <h4>Сортировка:</h4>
-          <ul>
+          <ul class="sorting-list">
             <li><a href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По рейтингу</a></li>
@@ -148,9 +148,9 @@
       <p class="hashtag">#VisitSedona</p>
       <section class="social-media-buttons">
         <ul>
-          <li><a class="social-media-button" href="#"><img src="img/twitter.svg" width="17" height="15" alt="Twitter"></a></li>
-          <li><a class="social-media-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
-          <li><a class="social-media-button" href="#"><img src="img/youtube.svg" width="20" height="16" alt="YouTube"></a></li>
+          <li class="social-media-button"><a  href="#"><img src="img/twitter.svg" width="17" height="15" alt="Twitter"></a></li>
+          <li class="social-media-button"><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
+          <li class="social-media-button"><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="YouTube"></a></li>
         </ul>
       </section>
       <p class="author">Website by </p><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy"></a>
