@@ -8,21 +8,25 @@
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
-
-  background-color: #ffffff;
-  background-image: url("../img/background-mountains.jpg"); /* Фон почему-то обрезался на обеих страницах. */
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 
-.inner-page {
+/* HEADER */
+
+.main-header {
+  background-color: #ffffff;
+  background-image: url("../img/background-mountains.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.main-header-inner {
   background-color: #ffffff;
   background-image: url("../img/background-inner.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+  width: 100%;
 }
-
-/* HEADER */
 
 a {
   text-decoration: none;
@@ -32,8 +36,6 @@ a {
   font-size: 14px;
   line-height: 26px;
   color: #000000;
-
-  background-color: #ffffff;
 }
 
 .site-navigation {
@@ -56,6 +58,7 @@ a {
 
  /* Не понимаю, как показать, что ссылка активна и я нахожусь на данной странице */
 
+
 .background-image {
   text-align: center;
 }
@@ -64,14 +67,22 @@ a {
 
 /* MAIN */
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .description-container {
+  line-height: 26px;
   text-align: center;
 } 
 
 .description {
   font-size: 21px;
   font-weight: bold;
-  line-height: 26px;
   color: #000000;
 }
 
@@ -127,7 +138,6 @@ a {
 }
 
 .reasons {
-  width: 1200px;
   height: 258px;
   background-color: #eeeeee;
 }
@@ -144,6 +154,7 @@ a {
 }
 
 .search {
+  line-height: 24px;
   text-align: center;
 }
 
@@ -182,9 +193,6 @@ a {
 .map {
   text-align: center;
 }
-
-
-
 
 .filter {
   font-size: 14px;
@@ -237,7 +245,8 @@ a {
   
   font-size: 12px;
   line-height: 18px;
-  color: rgba(0, 0, 0, 0.3); /* Эти свойства почему-то не применились. Стрелочки не понимаю как сделать в разных состояниях. */
+  color: #000000;
+  /*color: rgba(0, 0, 0, 0.3);*/ /* Эти свойства почему-то не применились. Стрелочки не понимаю как сделать в разных состояниях. */
 }
 
 .hotel-description h3 {
@@ -317,7 +326,6 @@ a {
 /* FOOTER */
 
 /*.main-footer {
-  width: 1200px;
   height: 120px;
   background-color: rgba(255, 255, 255, 0.9);
 }*/
