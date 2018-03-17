@@ -1,4 +1,4 @@
-﻿body {
+body {
   margin: 0;
   padding: 0;
 
@@ -12,21 +12,9 @@
 
 /* HEADER */
 
-.main-header {
-  background-color: #ffffff;
-  background-image: url("../img/background-mountains.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-  width: 100%;
-}
 
-.main-header-inner {
-  background-color: #ffffff;
-  background-image: url("../img/background-inner.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-  width: 100%;
-}
+
+
 
 a {
   text-decoration: none;
@@ -66,6 +54,23 @@ a {
 /* /HEADER */
 
 /* MAIN */
+
+.background-image {
+  background-color: #ffffff;
+  background-image: url("../img/background-mountains.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 100%;
+  
+}
+
+.filter-form {
+  background-color: #ffffff;
+  background-image: url("../img/background-inner.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 100%;
+}
 
 .visually-hidden {
   position: absolute;
@@ -236,17 +241,54 @@ a {
   color: #000000;
 }
 
-.sorting-list a {
-  text-decoration: none;
-}
-
 .sorting-list {
   list-style: none;
-  
+}
+
+.sorting-list a {
+  text-decoration: none;
   font-size: 12px;
   line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-list a.up-and-down {
+  border: none; 
+}
+
+.up-button path,
+.down-button path {
+  fill: #cacaca;
+}
+
+.active-button path {
+  fill: #81b3d2;
+}
+
+.sorting-list a:hover,
+.sorting-list a:focus {
+  color: #81b3d2;
+}
+
+.up-button path:hover,
+.down-button path:hover {
+  fill: #231f20;
+}
+
+.sorting-list a:active {
   color: #000000;
-  /*color: rgba(0, 0, 0, 0.3);*/ /* Эти свойства почему-то не применились. Стрелочки не понимаю как сделать в разных состояниях. */
+  border: none;
+}
+
+.up-button path:active,
+.down-button path:active {
+  fill: #81b3d2;
+}
+
+.sorting-list a.active {
+  color: #81b3d2;
+  border: none;
 }
 
 .hotel-description h3 {
@@ -347,23 +389,35 @@ a {
   list-style: none;
 }
 
+/* Сделать так, чтобы фон тоже был ссылкой*/
+
 .social-media-button:hover,
 .social-media-button:focus {
   background-color: #669ec0;
 }
 
-.social-media-button:active {
-  background-color: #5496bd; 
+.social-media-button > a:active img {
+  opacity: .3; 
 }
-/* Не понимаю, как сделать иконки соц.сетей в состоянии нажатия. */
 
 .author {
   line-height: 26px;
   color: #000000;
 }
 
-/* Не понимаю, как сделать лого в разных состояниях. 
-Замена исходного изображения на изображение другого цвета с помощью background-image не помогла. */
+.logo-htmlacademy {
+  width: 115px;
+  height: 41px;
+}
+
+.logo-htmlacademy path:hover,
+.logo-htmlacademy path:focus {
+  fill: #81b3d2;
+}
+
+.logo-htmlacademy path:active {
+  fill: #bdbbbc;
+}
 
 /* /FOOTER */
 
