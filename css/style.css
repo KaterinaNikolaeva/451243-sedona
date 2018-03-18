@@ -401,17 +401,27 @@ a {
   list-style: none;
 }
 
-.social-media-background {
-  text-align: center; 
-
+.social-media-buttons li {
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
 }
 
-.social-media-background:hover,
-.social-media-background:focus {
+.social-media-button a {
+  display: block;
+
+  text-align: center;
+
+  height: 100%;
+}
+
+.social-media-buttons li:hover,
+.social-media-buttons li:focus {
   background-color: #669ec0;
+}
+
+.social-media-buttons li:active {
+  background-color: #5496bd;
 }
 
 .social-media-button > a:active img {
@@ -491,6 +501,19 @@ a {
 .departure-date:focus {
   background-color: #ffffff;
   border: 3px solid #e5e5e5;
+}
+
+.date-button {
+  fill: #cacaca;
+}
+
+.date-button:hover,
+.date-burron:focus {
+  fill: #000000;
+}
+
+.date-button:active {
+  fill: #81b3d2;
 }
 
 .quantity-button {
