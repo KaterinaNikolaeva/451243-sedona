@@ -53,15 +53,18 @@ a {
 /* MAIN */
 
 .background-image {
-  text-align: center;
-
   background-color: #ffffff;
   background-image: url("../img/background-mountains.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   width: 100%;
   height: 568px;
-  
+}
+
+.background-image img {
+  position: absolute;
+  top: 132px;
+  left: 784px;
 }
 
 .filter-form {
@@ -83,6 +86,8 @@ a {
 .description-container {
   line-height: 26px;
   text-align: center;
+
+  width: 576px;
 } 
 
 .description {
@@ -109,6 +114,20 @@ a {
   font-weight: bold;
   line-height: 21px;
   color: #ffffff;
+
+  width: 134px;
+  padding-left: 133px;
+  padding-top: 20px;
+}
+
+.first-reason span {
+  padding-top: 10px;
+}
+
+.first-reason p {
+  width: 287px;
+  padding-left: 58px;
+  padding-top: 14px;
 }
 
 .recommendations {
@@ -117,13 +136,31 @@ a {
 
 .recommendation {
   text-align: center;
+
+  width: 400px;
 }
 
 .recommendation h4 {
+  position: relative;
+  top: 5px;
+
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
   color: #000000;
+}
+
+.recommendation p {
+  position: relative;
+  top: 2px;
+  left: 50px;
+
+  width: 300px;
+}
+
+.recommendation-photo {
+  position: relative;
+  top: 7px;
 }
 
 .second-reason {
@@ -556,3 +593,133 @@ a {
 }
 
 /* /MODAL */
+
+/* Сеточные стили */
+
+.main-header {
+  /* Временно для сетки */
+  min-height: 69px;
+  background-color: rgba(11, 212, 155, 0.2);
+  outline: 4px solid pink;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*background-color: #ffffff;*/
+
+  /* Временно для сетки */
+  /*min-height: 69px;*/
+  background-color: rgba(212, 202, 11, 0.2);
+  outline: 4px solid pink;
+}
+
+.main-header-logo {
+  position: absolute;
+  z-index: 1;
+
+  width: 138px;
+  height: 70px;
+
+  /* Временно для сетки */
+  /*display: block;*/
+  background-color: rgba(212, 11, 68, 0.2);
+  outline: 4px solid pink;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+
+  width: 1056px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 56px;
+  background-color: rgba(31, 11, 212, 0.2);
+  outline: 4px solid pink;
+}
+
+.site-navigation li {
+  margin-top: 15px;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: 245px;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-right: 18px;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  margin: -33px auto;
+  margin-bottom: 35px;
+
+  /* Временно для сетки */
+  min-height: 103px;
+  background-color: rgba(212, 141, 11, 0.2);
+  outline: 4px solid pink;
+
+}
+
+.reasons-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  /* Временно для сетки */
+  min-height: 1098px;
+  background-color: rgba(212, 212, 11, 0.2);
+  outline: 4px solid pink;
+}
+
+.reason-1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 57px;
+
+  /* Временно для сетки */
+  min-height: 256px;
+  background-color: rgba(212, 11, 212, 0.2);
+  outline: 4px solid pink;
+}
+
+.recommendations {
+  display: flex;
+  justify-content: center;
+  
+
+  /* Временно для сетки */
+  min-height: 256px;
+  background-color: rgba(135, 212, 11, 0.2);
+  outline: 4px solid pink;
+}
+
+.reason-2 {
+  display: flex;
+  justify-content: center;
+
+  /* Временно для сетки */
+  min-height: 256px;
+  background-color: rgba(212, 17, 11, 0.2);
+  outline: 4px solid pink;
+}
+
+.reasons {
+  display: flex;
+  justify-content: center;
+
+  /* Временно для сетки */
+  min-height: 256px;
+  background-color: rgba(125, 11, 212, 0.2);
+  outline: 4px solid pink;
+}
