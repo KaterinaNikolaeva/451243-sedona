@@ -117,7 +117,7 @@ a {
 
   width: 134px;
   padding-left: 133px;
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 .first-reason span {
@@ -142,7 +142,7 @@ a {
 
 .recommendation h4 {
   position: relative;
-  top: 5px;
+  top: -6px;
 
   font-size: 21px;
   font-weight: bold;
@@ -152,7 +152,7 @@ a {
 
 .recommendation p {
   position: relative;
-  top: 2px;
+  top: -10px;
   left: 50px;
 
   width: 300px;
@@ -160,7 +160,7 @@ a {
 
 .recommendation-photo {
   position: relative;
-  top: 7px;
+  top: -4px;
 }
 
 .second-reason {
@@ -597,6 +597,10 @@ a {
 /* Сеточные стили */
 
 .main-header {
+  display: block;
+  position: absolute;
+  left: 486px;
+
   /* Временно для сетки */
   min-height: 69px;
   background-color: rgba(11, 212, 155, 0.2);
@@ -660,13 +664,13 @@ a {
 .description-container {
   display: flex;
   flex-direction: column;
-  margin: -33px auto;
-  margin-bottom: 35px;
+  margin: 34px auto;
+  margin-bottom: 33px;
 
   /* Временно для сетки */
-  min-height: 103px;
+ /* min-height: 103px;
   background-color: rgba(212, 141, 11, 0.2);
-  outline: 4px solid pink;
+  outline: 4px solid pink;*/
 
 }
 
@@ -677,9 +681,9 @@ a {
   padding: 0;
 
   /* Временно для сетки */
-  min-height: 1098px;
+/*  min-height: 1098px;
   background-color: rgba(212, 212, 11, 0.2);
-  outline: 4px solid pink;
+  outline: 4px solid pink;*/
 }
 
 .reason-1 {
@@ -688,20 +692,20 @@ a {
   margin-bottom: 57px;
 
   /* Временно для сетки */
-  min-height: 256px;
+ /* min-height: 256px;
   background-color: rgba(212, 11, 212, 0.2);
-  outline: 4px solid pink;
+  outline: 4px solid pink;*/
 }
 
 .recommendations {
   display: flex;
   justify-content: center;
-  
+  margin-bottom: 59px;
 
   /* Временно для сетки */
-  min-height: 256px;
+  /*min-height: 256px;
   background-color: rgba(135, 212, 11, 0.2);
-  outline: 4px solid pink;
+  outline: 4px solid pink;*/
 }
 
 .reason-2 {
@@ -709,9 +713,9 @@ a {
   justify-content: center;
 
   /* Временно для сетки */
-  min-height: 256px;
+/*  min-height: 256px;
   background-color: rgba(212, 17, 11, 0.2);
-  outline: 4px solid pink;
+  outline: 4px solid pink;*/
 }
 
 .reasons {
@@ -723,3 +727,123 @@ a {
   background-color: rgba(125, 11, 212, 0.2);
   outline: 4px solid pink;
 }
+
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0 auto;
+
+  /* Временно для сетки */
+  min-height: 290px;
+  background-color: rgba(6, 56, 17, 0.2);
+  outline: 4px solid pink;
+}
+
+.search p:nth-child(2) {
+  margin-bottom: 48px;
+}
+
+.hotel-search-button {
+  /*position: relative;
+  top: 48px;
+  left: 100px;
+  bottom: ;*/
+}
+
+.map {
+  display: flex;
+
+  /* Временно для сетки */
+  min-height: 475px;
+  background-color: rgba(79, 6, 143, 0.2);
+  outline: 4px solid pink;
+}
+
+.map img {
+  margin-left: 414px;
+}
+
+.main-footer {
+  display: flex;
+
+  /* Временно для сетки */
+  min-height: 121px;
+  background-color: rgba(38, 143, 6, 0.2);
+  outline: 4px solid pink;
+}
+
+.main-footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 968px;
+  margin-left: 550px;
+
+  /* Временно для сетки */
+  min-height: 48px;
+  background-color: rgba(143, 6, 54, 0.2);
+  outline: 4px solid pink;
+}
+
+.social-media-buttons {
+  display: flex;
+  flex-direction: column;
+
+   Временно для сетки 
+  min-height: 48px;
+  background-color: rgba(62, 140, 52, 0.2);
+  outline: 4px solid pink;
+}
+
+.social-media-buttons-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 152px;
+  padding-left: 0 auto;
+
+   /* Временно для сетки */
+  min-height: 48px;
+  background-color: rgba(62, 140, 52, 0.2);
+  outline: 4px solid pink;
+}
+
+.main-footer-author {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+  /* Временно для сетки */
+  min-height: 28px;
+  background-color: rgba(52, 127, 140, 0.2);
+  outline: 4px solid pink;
+}
+
+.logo-htmlacademy {
+  padding-left: 8px;
+}
+
+.modal-search {
+  display: flex;
+  flex-direction: row;
+  margin-left: 650px;
+
+   /* Временно для сетки */
+  min-height: 574px;
+  background-color: rgba(52, 127, 140, 0.2);
+  outline: 4px solid pink;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  padding: 56px;
+
+
+   /* Временно для сетки */
+  min-height: 574px;
+  background-color: rgba(52, 127, 140, 0.2);
+  outline: 4px solid pink;
+}
+
