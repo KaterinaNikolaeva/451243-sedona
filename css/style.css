@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   font-family: "PT Sans", Arial, sans-serif;
@@ -8,6 +8,8 @@ body {
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
+
+  width: 1200px;
 }
 
 /* HEADER */
@@ -126,8 +128,8 @@ a {
 
 .first-reason p {
   width: 287px;
-  padding-left: 58px;
-  padding-top: 14px;
+  padding-left: 57px;
+  padding-top: 13px;
 }
 
 .recommendations {
@@ -180,7 +182,6 @@ a {
 }
 
 .reasons {
-  height: 258px;
   background-color: #eeeeee;
 }
 
@@ -205,6 +206,7 @@ a {
   font-weight: bold;
   line-height: 36px;
   color: #000000;
+  margin-bottom: 26px;
 }
 
 .button {
@@ -597,9 +599,7 @@ a {
 /* Сеточные стили */
 
 .main-header {
-  display: block;
   position: absolute;
-  left: 486px;
 
   /* Временно для сетки */
   min-height: 69px;
@@ -611,7 +611,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*background-color: #ffffff;*/
+  
 
   /* Временно для сетки */
   /*min-height: 69px;*/
@@ -636,6 +636,8 @@ a {
   display: flex;
   justify-content: space-between;
   z-index: 2;
+
+  /*background-color: #ffffff;*/
 
   width: 1056px;
   margin: 0;
@@ -686,6 +688,11 @@ a {
   outline: 4px solid pink;*/
 }
 
+/*.first-reason > span {
+  position: absolute;
+  padding-top: 20px;
+}*/
+
 .reason-1 {
   display: flex;
   justify-content: center;
@@ -720,12 +727,24 @@ a {
 
 .reasons {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  margin-top: -5px;
+  margin-bottom: 19px;
+  padding-top: 30px;
+  padding-bottom: 60px;
 
   /* Временно для сетки */
-  min-height: 256px;
+/*  min-height: 256px;
   background-color: rgba(125, 11, 212, 0.2);
-  outline: 4px solid pink;
+  outline: 4px solid pink;*/
+}
+
+.reason h3 {
+  width: 139px;
+}
+
+.reason p {
+  width: 280px;
 }
 
 .search {
@@ -735,20 +754,18 @@ a {
   margin-left: 0 auto;
 
   /* Временно для сетки */
-  min-height: 290px;
+  /*min-height: 290px;
   background-color: rgba(6, 56, 17, 0.2);
-  outline: 4px solid pink;
+  outline: 4px solid pink;*/
 }
 
-.search p:nth-child(2) {
-  margin-bottom: 48px;
+.interested-description {
+  margin: 0 400px 48px;
 }
 
 .hotel-search-button {
-  /*position: relative;
-  top: 48px;
-  left: 100px;
-  bottom: ;*/
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .map {
@@ -760,12 +777,9 @@ a {
   outline: 4px solid pink;
 }
 
-.map img {
-  margin-left: 414px;
-}
-
 .main-footer {
   display: flex;
+  justify-content: center;
 
   /* Временно для сетки */
   min-height: 121px;
@@ -777,7 +791,6 @@ a {
   display: flex;
   justify-content: space-between;
   flex-basis: 968px;
-  margin-left: 550px;
 
   /* Временно для сетки */
   min-height: 48px;
