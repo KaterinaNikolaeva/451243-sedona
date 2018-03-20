@@ -89,13 +89,15 @@ a {
   line-height: 26px;
   text-align: center;
 
-  width: 576px;
+  padding-bottom: 31px;
 } 
 
 .description {
   font-size: 21px;
   font-weight: bold;
   color: #000000;
+
+  padding: 35px 350px 0px;
 }
 
 .reasons-list { 
@@ -117,9 +119,7 @@ a {
   line-height: 21px;
   color: #ffffff;
 
-  width: 134px;
-  padding-left: 133px;
-  padding-top: 25px;
+  padding: 25px 133px 0px;
 }
 
 .first-reason span {
@@ -139,13 +139,10 @@ a {
 .recommendation {
   text-align: center;
 
-  width: 400px;
+  padding: 0 50px 60px;
 }
 
 .recommendation h4 {
-  position: relative;
-  top: -6px;
-
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
@@ -153,16 +150,7 @@ a {
 }
 
 .recommendation p {
-  position: relative;
-  top: -10px;
-  left: 50px;
-
   width: 300px;
-}
-
-.recommendation-photo {
-  position: relative;
-  top: -4px;
 }
 
 .second-reason {
@@ -175,10 +163,20 @@ a {
 }
 
 .second-reason h3 {
+  margin: 0 auto;
+  padding-top: 48px;
+  padding-bottom: 25px;
+
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
   color: #ffffff;
+
+  width: 151px;
+}
+
+.second-reason p {
+  padding: 9px 40px;
 }
 
 .reasons {
@@ -612,7 +610,6 @@ a {
   flex-direction: column;
   align-items: center;
   
-
   /* Временно для сетки */
   /*min-height: 69px;*/
   background-color: rgba(212, 202, 11, 0.2);
@@ -666,8 +663,6 @@ a {
 .description-container {
   display: flex;
   flex-direction: column;
-  margin: 34px auto;
-  margin-bottom: 33px;
 
   /* Временно для сетки */
  /* min-height: 103px;
@@ -696,7 +691,7 @@ a {
 .reason-1 {
   display: flex;
   justify-content: center;
-  margin-bottom: 57px;
+  margin-bottom: 50px;
 
   /* Временно для сетки */
  /* min-height: 256px;
@@ -706,8 +701,6 @@ a {
 
 .recommendations {
   display: flex;
-  justify-content: center;
-  margin-bottom: 59px;
 
   /* Временно для сетки */
   /*min-height: 256px;
@@ -727,11 +720,10 @@ a {
 
 .reasons {
   display: flex;
-  justify-content: space-around;
-  margin-top: -5px;
+  margin-top: -6px;
   margin-bottom: 19px;
-  padding-top: 30px;
-  padding-bottom: 60px;
+  padding-bottom: 46px;
+
 
   /* Временно для сетки */
 /*  min-height: 256px;
@@ -740,11 +732,13 @@ a {
 }
 
 .reason h3 {
-  width: 139px;
+  margin: 0 auto;
+  padding: 51px 125px 22px;
 }
 
 .reason p {
-  width: 280px;
+  margin: 0 auto;
+  padding: 25px 85px 9px;
 }
 
 .search {
@@ -760,7 +754,7 @@ a {
 }
 
 .interested-description {
-  margin: 0 400px 48px;
+  margin: 0 400px 45px;
 }
 
 .hotel-search-button {
@@ -826,7 +820,6 @@ a {
   flex-direction: row;
   justify-content: space-between;
 
-
   /* Временно для сетки */
   min-height: 28px;
   background-color: rgba(52, 127, 140, 0.2);
@@ -840,23 +833,28 @@ a {
 .modal-search {
   display: flex;
   flex-direction: row;
-  margin-left: 650px;
 
    /* Временно для сетки */
-  min-height: 574px;
+  /*min-height: 574px;
   background-color: rgba(52, 127, 140, 0.2);
-  outline: 4px solid pink;
+  outline: 4px solid pink;*/
 }
 
 .search-form {
-  display: flex;
-  flex-direction: column;
+  position: absolute; 
   padding: 56px;
-
+  background-color: #ffffff;
 
    /* Временно для сетки */
-  min-height: 574px;
-  background-color: rgba(52, 127, 140, 0.2);
+  /*min-height: 574px;
+  background-color: rgba(52, 127, 140, 0.2);*/
   outline: 4px solid pink;
 }
 
+.search-item-group {
+  display: inline-block;
+}
+
+.search-button {
+  display: inherit;
+}
