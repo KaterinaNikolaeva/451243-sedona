@@ -9,7 +9,7 @@ body {
   color: #333333;
   text-transform: uppercase;
 
-  width: 1200px;
+  width: 100%;
 }
 
 /* HEADER */
@@ -55,18 +55,22 @@ a {
 /* MAIN */
 
 .background-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: #ffffff;
   background-image: url("../img/background-mountains.jpg");
   background-position: center top;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 568px;
+  min-height: 568px;
+  background-size: contain;
 }
 
 .background-image img {
-  position: absolute;
-  top: 132px;
-  left: 784px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .filter-form {
@@ -596,6 +600,11 @@ a {
 
 /* Сеточные стили */
 
+.central-container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
 .main-header {
   position: absolute;
 
@@ -636,7 +645,7 @@ a {
 
   /*background-color: #ffffff;*/
 
-  width: 1056px;
+  width: 1200px;
   margin: 0;
   padding: 0;
 
@@ -648,16 +657,21 @@ a {
   outline: 4px solid pink;
 }
 
-.site-navigation li {
-  margin-top: 15px;
+.site-navigation > li {
+  flex-basis: 20%;
+  padding: 14px 0 16px 71px;
 }
 
 .site-navigation li:nth-child(2) {
-  margin-right: 245px;
+  padding: 14px 0 14px 77px;
 }
 
 .site-navigation li:nth-child(3) {
-  margin-right: 18px;
+  padding: 14px 0 14px 322px;
+}
+
+.site-navigation li:last-child {
+  padding: 14px 0 14px 120px;
 }
 
 .description-container {
@@ -796,7 +810,7 @@ a {
   display: flex;
   flex-direction: column;
 
-   Временно для сетки 
+   /*Временно для сетки */
   min-height: 48px;
   background-color: rgba(62, 140, 52, 0.2);
   outline: 4px solid pink;
