@@ -74,7 +74,7 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 26px;
 
   background-color: #ffffff;
   background-image: url("../img/background-inner.jpg");
@@ -270,6 +270,8 @@ a {
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
+
+  border: none;
 }
 
 .filter legend {
@@ -304,7 +306,7 @@ a {
 
 .sorting {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 41px;
   padding: 4px;
@@ -316,15 +318,25 @@ a {
   line-height: 26px;
   font-weight: bold;
   color: #000000;
+ 
+  margin: 0 0;
+  /*padding-left: 49px;*/
 }
 
 .sorting h4 {
   font-size: 12px;
   line-height: 18px;
+  font-weight: normal;
   color: #000000;
+
+  margin: 0 0;
+  /*padding-right: 602px;*/
 }
 
 .sorting-list {
+  margin: 0 0;
+  padding: 0 0;
+
   display: flex;
   list-style: none;
 }
@@ -340,6 +352,13 @@ a {
 .sorting-list a.up-and-down {
   border: none; 
 }
+
+.up-and-down-group {
+  display: flex;
+  margin-left: 300px;
+}
+
+
 
 .up-button path,
 .down-button path {
@@ -1028,6 +1047,34 @@ a {
 .main-header-inner {
   position: absolute;
 
+}
+
+.filter-input-checkbox {
+  display: none;
+}
+
+.filter-input-checkbox:checked + label:before {
+  display: inline-block;
+  content: '';
+  vertical-align: middle;
+  width: 27px;
+  height: 23px;
+  border: 1px solid red;
+  margin-right: 20px;
+  background-image: url("img/checkbox-on.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-input-checkbox + label:before {
+  display: inline-block;
+  content: '';
+  vertical-align: middle;
+  width: 23px;
+  height: 23px;
+  border: 1px solid red;
+  margin-right: 20px;
+  background-image: url("img/checkbox-off.svg");
+  background-repeat: no-repeat;
 }
 
 .search-results {
