@@ -62,7 +62,22 @@
           </ul>
         </fieldset>
         <fieldset class="filter filter-3">
-          <legend>Стоимость в сутки (р):</legend>
+          <div class="filter-range">
+            <div class="filter-range-title">Стоимость в сутки (р):</div>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
+          </div>
+          <!-- <legend>Стоимость в сутки (р):</legend>
           <table>
             <tr>
               <td><span>от </span><output name="min-price-output">0</output></td>
@@ -70,7 +85,7 @@
             </tr>
           </table>
           <input class="filter-range" type="range" multiple min="0" max="3000">
-          <button class="filter-button" type="submit">Показать</button>
+          <button class="filter-button" type="submit">Показать</button> -->
         </fieldset>
       </form>
       <div class="container">
