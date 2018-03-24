@@ -72,7 +72,7 @@ a {
 
 .filter-form {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 26px;
 
@@ -267,6 +267,8 @@ a {
 }
 
 .filter {
+  margin: 0 0;
+  padding: 0 0;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
@@ -280,6 +282,8 @@ a {
 }
 
 .filter-list {
+  margin: 0 0;
+  padding: 0 0;
   list-style: none;
 }
 
@@ -354,8 +358,9 @@ a {
 }
 
 .up-and-down-group {
+  list-style: none;
   display: flex;
-  margin-left: 300px;
+  margin-left: auto;
 }
 
 
@@ -491,8 +496,6 @@ a {
   font-weight: bold;
   line-height: 26px;
   color: #000000;
-  margin-left: 54px;
-  margin-top: 74px;
 }
 
 .social-media-button {
@@ -504,10 +507,6 @@ a {
   margin-top: 74px;
 }
 
-.social-media-buttons ul {
-  display: flex;
-  
-}
 
 .social-media-buttons li {
   width: 46px;
@@ -874,13 +873,16 @@ a {
 }
 
 .main-footer {
+  position: absolute;
   display: flex;
   justify-content: center;
+  bottom: 0;
+  width: 1200px;
+  min-height: 120px;
+  background-color: rgba(254, 254, 254, 0.9);
 
   /* Временно для сетки */
-  min-height: 121px;
-  background-color: rgba(38, 143, 6, 0.2);
-  outline: 4px solid pink;
+/*  outline: 4px solid pink;*/
 }
 
 .main-footer-container {
@@ -889,32 +891,34 @@ a {
   flex-basis: 968px;
 
   /* Временно для сетки */
-  min-height: 48px;
+ /* min-height: 48px;
   background-color: rgba(143, 6, 54, 0.2);
-  outline: 4px solid pink;
+  outline: 4px solid pink;*/
 }
 
 .social-media-buttons {
   display: flex;
   flex-direction: column;
+  min-height: 48px;
+  margin: 0 auto;
+  padding-right: 10px;
 
    /*Временно для сетки */
-  min-height: 48px;
-  background-color: rgba(62, 140, 52, 0.2);
-  outline: 4px solid pink;
+  
+  /*background-color: rgba(62, 140, 52, 0.2);
+  outline: 4px solid pink;*/
 }
 
 .social-media-buttons-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 152px;
   padding-left: 0 auto;
 
    /* Временно для сетки */
-  min-height: 48px;
+/*  min-height: 48px;
   background-color: rgba(62, 140, 52, 0.2);
-  outline: 4px solid pink;
+  outline: 4px solid pink;*/
 }
 
 .social-media-buttons-list a {
@@ -923,24 +927,34 @@ a {
   align-items: center;
 }
 
+.social-media-button {
+  margin: 1px 3px 0 3px;
+}
+
 .main-footer-author {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  min-height: 28px;
 
   /* Временно для сетки */
-  min-height: 28px;
-  background-color: rgba(52, 127, 140, 0.2);
-  outline: 4px solid pink;
+  
+ /* background-color: rgba(52, 127, 140, 0.2);
+  outline: 4px solid pink;*/
 }
 
 .logo-htmlacademy {
-  padding-left: 8px;
+  padding: 4px 0 0 8px;
 }
 
 .modal-search {
+  position: absolute; 
   display: flex;
   flex-direction: row;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 2170px;
 
    /* Временно для сетки */
   /*min-height: 574px;
@@ -949,12 +963,9 @@ a {
 }
 
 .search-form {
-  position: absolute; 
   padding: 55px 56px 0 56px;
   background-color: #ffffff;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 2170px;
+ 
 
    /* Временно для сетки */
   /*min-height: 574px;
@@ -1037,7 +1048,7 @@ a {
 }
 
 .main-footer-container {
-  margin-left: 20px;
+  margin-left: 30px;
   align-items: center;
 }
 
@@ -1058,10 +1069,9 @@ a {
   content: '';
   vertical-align: middle;
   width: 27px;
-  height: 23px;
-  border: 1px solid red;
+  height: 27px;
   margin-right: 20px;
-  background-image: url("img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
 }
 
@@ -1069,11 +1079,10 @@ a {
   display: inline-block;
   content: '';
   vertical-align: middle;
-  width: 23px;
-  height: 23px;
-  border: 1px solid red;
+  width: 27px;
+  height: 27px;
   margin-right: 20px;
-  background-image: url("img/checkbox-off.svg");
+  background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
 }
 
