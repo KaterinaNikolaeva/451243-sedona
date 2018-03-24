@@ -97,15 +97,16 @@ a {
   line-height: 26px;
   text-align: center;
 
-  padding-bottom: 31px;
+  padding-bottom: 36px;
 } 
 
 .description {
+  margin: 0 auto;
   font-size: 21px;
   font-weight: bold;
   color: #000000;
 
-  padding: 35px 350px 0px;
+  padding: 56px 350px 14px;
 }
 
 .reasons-list { 
@@ -117,27 +118,32 @@ a {
   color: #ffffff;
 
   width: 400px;
-  height: 256px;
+  height: 50%;    /*Можно ли здесь использовать высоту в %? Если этот параметр не указать, то блок становится выше, чем нужно и это никак не исправить*/
+  min-height: 256px;
   background-color: #81b3d2;
 }
 
 .first-reason h3 {
+  margin: 0 auto;
+  padding: 50px 133px 24px;
+
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
   color: #ffffff;
 
-  padding: 25px 133px 0px;
+  
 }
 
 .first-reason span {
-  padding-top: 10px;
+  display: inline-block;
+  margin: 0 auto;
+  padding-bottom: 22px;
 }
 
 .first-reason p {
-  width: 287px;
-  padding-left: 57px;
-  padding-top: 13px;
+  margin: 0 auto;
+  padding: 0 57px;
 }
 
 .recommendations {
@@ -145,20 +151,24 @@ a {
 }
 
 .recommendation {
+  width: 33%;
   text-align: center;
 
-  padding: 0 50px 60px;
+  padding: 0 50px;
+}
+
+.recommendation-photo {
+  padding-bottom: 26px;
 }
 
 .recommendation h4 {
+  margin: 0 auto;
+  padding-bottom: 10px;
+
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
   color: #000000;
-}
-
-.recommendation p {
-  width: 300px;
 }
 
 .second-reason {
@@ -166,7 +176,8 @@ a {
   color: #ffffff;
 
   width: 400px;
-  height: 256px;
+  height: 50%;
+  min-height: 256px;
   background-color: #81b3d2;
 }
 
@@ -183,7 +194,14 @@ a {
   width: 151px;
 }
 
+.second-reason span {
+  display: inline-block;
+  margin-bottom: 0 auto;
+  padding-bottom: 12px;
+}
+
 .second-reason p {
+  margin: 0 auto;
   padding: 9px 40px;
 }
 
@@ -192,6 +210,7 @@ a {
 }
 
 .reason {
+  width: 33%;
   text-align: center;
 }
 
@@ -208,6 +227,7 @@ a {
 }
 
 .interested {
+  margin: 0 auto;
   font-size: 30px;
   font-weight: bold;
   line-height: 36px;
@@ -433,7 +453,7 @@ a {
 .rating p {
   color: #666666;
 
-  width: 110px;
+  min-width: 110px;
   height: 27px;
   background-color: #f2f2f2;
 }
@@ -528,9 +548,11 @@ a {
 }
 
 .search-form .search-item {
+  margin: 0 auto;
   font-weight: bold;
   line-height: 26px;
   color: #000000;
+  margin-bottom: 30px;
 }
 
 .arrival-date {
@@ -587,6 +609,7 @@ a {
 .quantity-button {
   width: 38px;
   height: 38px;
+  font-weight: bold;
   background-color: #f2f2f2;
   border: none;
   cursor: pointer;
@@ -613,6 +636,7 @@ a {
   width: 458px;
   height: 58px;
   background-color: #81b3d2;
+  margin-bottom: 53px;
 }
 
 .search-button:hover,
@@ -633,15 +657,16 @@ a {
 .central-container {
   margin: 0 auto;
   width: 1200px;
+  position: relative;
 }
 
 .main-header {
   position: absolute;
 
   /* Временно для сетки */
-  min-height: 69px;
+ /* min-height: 69px;
   background-color: rgba(11, 212, 155, 0.2);
-  outline: 4px solid pink;
+  outline: 4px solid pink;*/
 }
 
 .main-navigation {
@@ -651,8 +676,8 @@ a {
   
   /* Временно для сетки */
   /*min-height: 69px;*/
-  background-color: rgba(212, 202, 11, 0.2);
-  outline: 4px solid pink;
+ /* background-color: rgba(212, 202, 11, 0.2);
+  outline: 4px solid pink;*/
 }
 
 .main-header-logo {
@@ -664,8 +689,12 @@ a {
 
   /* Временно для сетки */
   /*display: block;*/
-  background-color: rgba(212, 11, 68, 0.2);
-  outline: 4px solid pink;
+  /*background-color: rgba(212, 11, 68, 0.2);
+  outline: 4px solid pink;*/
+}
+
+.main-navigation-wrapper {
+  background-color: #ffffff;
 }
 
 .site-navigation {
@@ -682,26 +711,29 @@ a {
   list-style: none;
 
   /* Временно для сетки */
-  min-height: 56px;
+  /*min-height: 56px;
   background-color: rgba(31, 11, 212, 0.2);
-  outline: 4px solid pink;
+  outline: 4px solid pink;*/
 }
 
 .site-navigation > li {
   flex-basis: 20%;
+}
+
+.site-navigation li:first-child {
   padding: 14px 0 16px 71px;
 }
 
 .site-navigation li:nth-child(2) {
-  padding: 14px 0 14px 77px;
+  padding: 14px 0 14px 92px;
 }
 
 .site-navigation li:nth-child(3) {
-  padding: 14px 0 14px 322px;
+  padding: 14px 0 14px 336px;
 }
 
 .site-navigation li:last-child {
-  padding: 14px 0 14px 120px;
+  padding: 14px 0 14px 100px;
 }
 
 .description-container {
@@ -735,7 +767,7 @@ a {
 .reason-1 {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 56px;
 
   /* Временно для сетки */
  /* min-height: 256px;
@@ -745,6 +777,7 @@ a {
 
 .recommendations {
   display: flex;
+  padding-bottom: 71px;
 
   /* Временно для сетки */
   /*min-height: 256px;
@@ -764,9 +797,9 @@ a {
 
 .reasons {
   display: flex;
-  margin-top: -6px;
-  margin-bottom: 19px;
-  padding-bottom: 46px;
+  justify-content: space-around;
+  margin: -6px 0 51px;
+  padding-bottom: 60px;
 
 
   /* Временно для сетки */
@@ -777,12 +810,18 @@ a {
 
 .reason h3 {
   margin: 0 auto;
-  padding: 51px 125px 22px;
+  padding: 49px 125px 25px;
+}
+
+.reason span {
+  display: inline-block;
+  margin: 0 auto;
+  padding-bottom: 22px;
 }
 
 .reason p {
   margin: 0 auto;
-  padding: 25px 85px 9px;
+  padding: 0 60px;
 }
 
 .search {
@@ -798,7 +837,7 @@ a {
 }
 
 .interested-description {
-  margin: 0 400px 45px;
+  margin: 0 400px 47px;
 }
 
 .hotel-search-button {
@@ -808,11 +847,11 @@ a {
 
 .map {
   display: flex;
+  min-height: 475px;
 
   /* Временно для сетки */
-  min-height: 475px;
-  background-color: rgba(79, 6, 143, 0.2);
-  outline: 4px solid pink;
+/*  background-color: rgba(79, 6, 143, 0.2);
+  outline: 4px solid pink;*/
 }
 
 .main-footer {
@@ -892,11 +931,11 @@ a {
 
 .search-form {
   position: absolute; 
-  padding: 56px;
+  padding: 55px 56px 0 56px;
   background-color: #ffffff;
   left: 50%;
   transform: translateX(-50%);
-  top: 2150px;
+  top: 2170px;
 
    /* Временно для сетки */
   /*min-height: 574px;
@@ -906,15 +945,13 @@ a {
 
 .search-item-groups {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 24px;
 }
 
 .search-item-group {
   display: flex;
   align-items: center;
-  margin-bottom: 55px;
+  margin-bottom: 53px;
 
   font-weight: bold;
 }
@@ -935,22 +972,38 @@ a {
   position: absolute;
   right: 10px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-37%) translateX(1px);
+}
+
+.search-item label {
+  margin-left: 2px;
 }
 
 .arrival-date {
   box-sizing: border-box;
   width: 100%;
   border: none;
+  padding-left: 12px;
 }
 
 .departure-date {
   box-sizing: border-box;
   width: 100%;
   border: none;
+  padding-left: 12px;
+}
+
+.search-item-group label {
+  margin-right: 39px;
+}
+
+.search-item-group:nth-child(2) label {
+  margin: 0 auto;
+  margin: 0 27px 0 54px;
 }
 
 .quantity-field {
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
 
