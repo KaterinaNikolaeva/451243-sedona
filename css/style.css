@@ -1307,6 +1307,10 @@ a {
   margin-bottom: 26px;
 }
 
+.search-results .hotel:last-child {
+  margin-bottom: 0;
+}
+
 
 .hotel-details {
   display: flex;
@@ -1323,16 +1327,12 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-
-  /* Временно для сетки*/
-  border: 2px solid pink;
-  }
+}
 
   .hashtag-inner {
   margin: 0;
   padding: 0;
-  padding: 20px 0 0 0;
+  padding-left: 2px;
 
   font-size: 21px;
   font-weight: bold;
@@ -1432,6 +1432,7 @@ a {
 .main-footer-container-inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-basis: 968px;
   margin-left: 27px;
 
@@ -1446,7 +1447,7 @@ a {
   flex-direction: column;
   min-height: 48px;
   margin: 0;
-  padding: 8px 0 0 38px;
+  padding: 0 0 0 38px;
 
    /*Временно для сетки */
   
@@ -1483,7 +1484,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   min-height: 28px;
-  padding: 7px 0 0 7px;
+  padding: 0 0 0 7px;
 
   /* Временно для сетки */
   
@@ -1492,5 +1493,5 @@ a {
 }
 
 .logo-htmlacademy-inner {
-  padding: 4px 0 0 8px;
+  padding: 7px 0 0 8px;
 }
