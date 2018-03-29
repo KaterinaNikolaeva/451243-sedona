@@ -44,10 +44,13 @@ a {
 
 .main-header-logo {
   position: absolute;
+  left: 50%;
   z-index: 1;
 
   width: 138px;
   height: 70px;
+
+  transform: translateX(-50%);
 }
 
 .main-navigation-wrapper {
@@ -134,9 +137,14 @@ a {
 }
 
 .background-image img {
+  position: absolute;
+  left: 50%;
+
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 133px;
+
+  transform: translateX(-50%);
 }
 
 .visually-hidden {
@@ -518,7 +526,7 @@ a {
 
 .modal-search {
   position: absolute; 
-  top: 2170px;
+  top: 2183px;
   left: 50%;
 
   display: flex;
