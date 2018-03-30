@@ -188,7 +188,7 @@ a {
 .reason-1 {
   display: flex;
   justify-content: center;
-  margin-bottom: 54px;
+  margin-bottom: 52px;
 }
 
 .first-reason {
@@ -225,7 +225,7 @@ a {
 
 .recommendations {
   display: flex;
-  padding-bottom: 71px;
+  padding-bottom: 66px;
 
   background-color: #ffffff;
 }
@@ -270,7 +270,7 @@ a {
 .second-reason h3 {
   width: 151px;
   margin: 0 auto;
-  padding-top: 48px;
+  padding-top: 46px;
   padding-bottom: 25px;
 
   font-size: 21px;
@@ -293,7 +293,7 @@ a {
 .reasons {
   display: flex;
   justify-content: space-around;
-  margin: -6px 0 51px;
+  margin: -6px 0 50px;
   padding-bottom: 60px;
 
   background-color: #eeeeee;
@@ -307,7 +307,7 @@ a {
 
 .reason h3 {
   margin: 0 auto;
-  padding: 49px 125px 25px;
+  padding: 49px 125px 22px;
 
   font-size: 21px;
   line-height: 21px;
@@ -338,7 +338,7 @@ a {
 
 .interested {
   margin: 0 auto;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
 
   font-size: 30px;
   line-height: 36px;
@@ -527,7 +527,7 @@ a {
 
 .modal-search {
   position: absolute; 
-  top: 2183px;
+  top: 2169px;
   left: 50%;
 
   display: flex;
@@ -537,7 +537,7 @@ a {
 }
 
 .search-form {
-  padding: 55px 56px 0 56px;
+  padding: 55px 55px 0 55px;
 
   background-color: #ffffff;
   box-shadow: 0px 6px 7px 2px rgba(0, 1, 1, 0.1);
