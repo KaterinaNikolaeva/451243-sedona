@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона - Гостиницы</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="central-container">
@@ -19,7 +19,7 @@
               <li><a href="index.html">Информация</a></li>
               <li><a href="gallery.html">Фото и видео</a></li>
               <li><a href="map.html">Карта штата</a></li>
-              <li><a class="hotels-active">Гостиницы</a></li>
+              <li class="hotels-active">Гостиницы</li>
 		        </ul>
 		      </div>
 		    </nav>
@@ -31,15 +31,15 @@
             <legend>Инфраструктура:</legend>
               <ul class="filter-list">
                 <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox filter-disabled" type="checkbox" name="pool" id="pool-filter" checked>
+                  <input class="filter-input filter-input-checkbox filter-disabled visually-hidden" type="checkbox" name="pool" id="pool-filter" checked>
                   <label for="pool-filter">Бассейн</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox filter-disabled" type="checkbox" name="parking" id="parking-filter">
+                  <input class="filter-input filter-input-checkbox filter-disabled visually-hidden" type="checkbox" name="parking" id="parking-filter">
                   <label for="parking-filter">Парковка</label>  
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox filter-disabled" type="checkbox" name="wifi" id="wifi-filter">
+                  <input class="filter-input filter-input-checkbox filter-disabled visually-hidden" type="checkbox" name="wifi" id="wifi-filter">
                   <label for="wifi-filter">Wi-fi</label>
                 </li>
               </ul>
@@ -48,15 +48,15 @@
             <legend>Тип жилья:</legend>
             <ul class="filter-list">
               <li class="filter-option">
-                <input class="filter-input filter-input-checkbox filter-disabled" type="checkbox" name="hotel" id="hotel-filter" checked>
+                <input class="filter-input filter-input-checkbox filter-disabled visually-hidden" type="checkbox" name="hotel" id="hotel-filter" checked>
                 <label for="hotel-filter">Гостиница</label>
               </li>
               <li class="filter-option">
-                <input class="filter-input filter-input-checkbox filter-disabled" type="checkbox" name="motel" id="motel-filter" checked>
+                <input class="filter-input filter-input-checkbox filter-disabled visually-hidden" type="checkbox" name="motel" id="motel-filter" checked>
                 <label for="motel-filter">Мотель</label>
               </li>
               <li class="filter-option">
-                <input class="filter-input filter-input-checkbox filter-disabled" type="checkbox" name="apartement" id="apartement-filter" checked>
+                <input class="filter-input filter-input-checkbox filter-disabled visually-hidden" type="checkbox" name="apartement" id="apartement-filter" checked>
                 <label for="apartement-filter">Апартаменты</label>
               </li>
             </ul>
@@ -87,8 +87,8 @@
               <li><a class="active">По цене</a></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По рейтингу</a></li>
-              <li><a class="up-and-down" href="#"><svg class="up-button" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a></li>
-              <li><a class="up-and-down" href="#"><svg class="down-button active-button" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a></li>
+              <li><a class="up-and-down" href="#" aria-label="По возрастанию"><svg class="up-button" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a></li>
+              <li><a class="up-and-down" href="#" aria-label="По убыванию"><svg class="down-button active-button" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a></li>
             </ul>
           </section> 
         </div>
