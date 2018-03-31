@@ -1051,13 +1051,6 @@ a {
   border: none; 
 }
 
-.up-and-down-group {
-  display: flex;
-  margin-left: auto;
-
-  list-style: none;
-}
-
 .up-button path,
 .down-button path {
   fill: #cacaca;
@@ -1072,7 +1065,8 @@ a {
   color: #81b3d2;
 }
 
-.up-button path:hover {
+.up-button path:hover,
+.down-button path:hover {
   fill: #231f20;
 }
 
@@ -1082,11 +1076,14 @@ a {
   border: none;
 }
 
-.up-button path:active {
+.up-button path:active,
+.down-button path:active {
   fill: #81b3d2;
 }
 
-.down-button {
+.active-button path:hover {
+  fill: #81b3d2;
+
   cursor: default;
 }
 
