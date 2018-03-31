@@ -105,6 +105,8 @@ a {
 
  .site-navigation .info-active {
   color: #766357;
+
+  cursor: default;
  }
 
  .site-navigation .info-active:hover {
@@ -113,6 +115,8 @@ a {
 
 .site-navigation .hotels-active {
   color: #766357;
+
+  cursor: default;
 }
 
 .site-navigation .hotels-active:hover {
@@ -456,15 +460,15 @@ a {
   padding-left: 0 auto;
 }
 
-.social-media-buttons-list li:first-child {
+.social-media-buttons-list li:first-child a {
   padding: 18px 15px 10px 15px;
 }
 
-.social-media-buttons-list li:nth-child(2) {
+.social-media-buttons-list li:nth-child(2) a {
   padding: 14px 18px 14px 17px;
 }
 
-.social-media-buttons-list li:last-child {
+.social-media-buttons-list li:last-child a {
   padding: 17px 14px 11px 14px;
 }
 
@@ -942,11 +946,11 @@ a {
   position: absolute;
   top: -9px;
 
-  width: 6px;
-  height: 6px;
+  width: 4px;
+  height: 4px;
 
   background: #ababab;
-  border: 8px solid #ffffff;
+  border: 9px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 
@@ -1068,8 +1072,7 @@ a {
   color: #81b3d2;
 }
 
-.up-button path:hover,
-.down-button path:hover {
+.up-button path:hover {
   fill: #231f20;
 }
 
@@ -1079,9 +1082,12 @@ a {
   border: none;
 }
 
-.up-button path:active,
-.down-button path:active {
+.up-button path:active {
   fill: #81b3d2;
+}
+
+.down-button {
+  cursor: default;
 }
 
 .sorting-list a.active {
@@ -1312,15 +1318,15 @@ a {
   background-color: #5496bd;
 }
 
-.social-media-buttons-list-inner li:first-child {
+.social-media-buttons-list-inner li:first-child a {
   padding: 18px 15px 10px 15px;
 }
 
-.social-media-buttons-list-inner li:nth-child(2) {
+.social-media-buttons-list-inner li:nth-child(2) a {
   padding: 14px 18px 14px 17px;
 }
 
-.social-media-buttons-list-inner li:last-child {
+.social-media-buttons-list-inner li:last-child a {
   padding: 17px 14px 11px 14px;
 }
 
