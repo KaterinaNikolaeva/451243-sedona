@@ -220,6 +220,7 @@ a {
   display: inline-block;
   margin: 0 auto;
   padding-bottom: 22px;
+  vertical-align: middle;
 }
 
 .first-reason p {
@@ -286,6 +287,7 @@ a {
   display: inline-block;
   margin-bottom: 0 auto;
   padding-bottom: 12px;
+  vertical-align: middle;
 }
 
 .second-reason p {
@@ -322,6 +324,7 @@ a {
   display: inline-block;
   margin: 0 auto;
   padding-bottom: 22px;
+  vertical-align: middle;
 }
 
 .reason p {
@@ -370,6 +373,7 @@ a {
   width: 568px;
   height: 86px;
   margin: 0 auto;
+  vertical-align: bottom;
 
   background-color: #766357;
 }
@@ -424,7 +428,7 @@ a {
 }
 
 .social-media-button {
-  margin: 1px 3px 0 3px;
+  margin: 1px 3px 0;
 
   list-style: none; 
 }
@@ -578,7 +582,6 @@ a {
 }
 
 .arrival-date {
-  width: 346px;
   width: 100%;
   height: 38px;
   padding: 2px 0 0 12px;
@@ -597,8 +600,14 @@ a {
 }
 
 .arrival-date:focus {
+  outline: none;
+
   background-color: #ffffff;
-  border: 3px solid #e5e5e5;
+  outline: 3px solid #e5e5e5;
+}
+
+.arrival-date::-ms-clear {
+  display: none;
 }
 
 .departure-date {
@@ -621,8 +630,14 @@ a {
 }
 
 .departure-date:focus {
+  outline: none;
+
   background-color: #ffffff;
-  border: 3px solid #e5e5e5;
+  outline: 3px solid #e5e5e5;
+}
+
+.departure-date::-ms-clear {
+  display: none;
 }
 
 .date-button {
@@ -670,7 +685,7 @@ a {
   width: 38px;
   height: 38px;
   
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   color: #a9a9a9;
 
@@ -689,6 +704,10 @@ a {
   color: #81b3d2;
 }
 
+.minus {
+  padding-bottom: 3px;
+}
+
 .number {
   width: 38px;
   height: 36px;
@@ -700,6 +719,17 @@ a {
   
   background-color: #f2f2f2;
   border: none;
+}
+
+.number:hover {
+  background-color: #ebebeb;
+}
+
+.number:focus {
+  outline: none;
+
+  background-color: #ffffff;
+  outline: 3px solid #e5e5e5;
 }
 
 .search-button {
@@ -753,8 +783,8 @@ a {
 }
 
 .filter {
-  margin: 0 0;
-  padding: 0 0;
+  margin: 0;
+  padding: 0;
 
   font-size: 14px;
   line-height: 21px;
@@ -777,7 +807,7 @@ a {
 }
 
 .filter-list {
-  padding: 0 0;
+  padding: 0;
 
   list-style: none;
 }
@@ -800,7 +830,6 @@ a {
   width: 27px;
   height: 27px;
   margin-right: 13px;
-
   vertical-align: middle;
 
   background-image: url("../img/checkbox-on.svg");
@@ -824,7 +853,6 @@ a {
   width: 27px;
   height: 27px;
   margin-right: 13px;
-
   vertical-align: middle;
 
   background-image: url("../img/checkbox-off.svg");
@@ -885,6 +913,7 @@ a {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: middle;
 
   font-size: 14px;
 
@@ -992,13 +1021,13 @@ a {
   justify-content: flex-start;
   align-items: center;
   padding: 4px 0 30px;
-  margin-bottom: 25px;/*24px;*/
+  margin-bottom: 25px;
 
   border-bottom: 1px solid #e5e5e5;
 }
 
 .sorting p {
-  margin: 0 0;
+  margin: 0;
   margin-left: 71px;
 
   font-size: 21px;
@@ -1019,8 +1048,8 @@ a {
 
 .sorting-list {
   display: flex;
-  margin: 0 0;
-  padding: 0 0;
+  margin: 0;
+  padding: 0;
   padding-top: 2px;
 
   list-style: none;
@@ -1096,7 +1125,7 @@ a {
 .sorting-list a.active:focus {
   color: #81b3d2;
 
-  border-bottom: 1px dotted #81b3d2;;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .search-results {
@@ -1144,7 +1173,7 @@ a {
 }
 
 .hotel-description h3 {
-  margin: 0 0;
+  margin: 0;
   padding-bottom: 7px;
 
   font-size: 21px;
@@ -1184,8 +1213,8 @@ a {
 .button-hotel-more {
   display: inline-block;
   margin: 0 3px 0 0;
-  /*padding: 3px 16px 4px;*/
   padding: 3px 17px 3px;
+  vertical-align: bottom;
 
   background-color: #81b3d2;
 }
@@ -1204,8 +1233,8 @@ a {
 .button-hotel-booking {
   display: inline-block;
   margin: 0 0;
-  /*padding: 3px 16px 4px;*/
   padding: 3px 16px 3px;
+  vertical-align: bottom;
 
   background-color: #766357;
 }
