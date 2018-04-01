@@ -461,7 +461,7 @@ a {
   text-align: center;
 }
 
-.social-media-button > a:active img {
+.social-media-button > a:active {
   opacity: 0.3; 
 }
 
@@ -486,15 +486,15 @@ a {
   padding-left: 0 auto;
 }
 
-.social-media-buttons-list li:first-child a {
+.social-media-button:first-child a {
   padding: 18px 15px 10px 15px;
 }
 
-.social-media-buttons-list li:nth-child(2) a {
+.social-media-button:nth-child(2) a {
   padding: 14px 18px 14px 17px;
 }
 
-.social-media-buttons-list li:last-child a {
+.social-media-button:last-child a {
   padding: 17px 14px 11px 14px;
 }
 
@@ -1098,7 +1098,15 @@ a {
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting-list a.up-and-down {
+a.sorting-active {
+  color: #81b3d2;
+
+  border: none;
+
+  cursor: default;
+}
+
+a.up-and-down {
   border: none; 
 }
 
@@ -1116,15 +1124,21 @@ a {
   color: #81b3d2;
 }
 
-.up-button path:hover,
-.down-button path:hover {
-  fill: #231f20;
-}
-
 .sorting-list a:active {
   color: #000000;
 
   border: none;
+}
+
+a.sorting-active:active {
+  color: #81b3d2;
+
+  border: none;
+}
+
+.up-button path:hover,
+.down-button path:hover {
+  fill: #231f20;
 }
 
 .up-button path:active,
@@ -1136,18 +1150,6 @@ a {
   fill: #81b3d2;
 
   cursor: default;
-}
-
-.sorting-list a.active {
-  color: #81b3d2;
-
-  border: none;
-}
-
-.sorting-list a.active:focus {
-  color: #81b3d2;
-
-  border-bottom: 1px dotted #81b3d2;
 }
 
 .search-results {
@@ -1272,7 +1274,9 @@ a {
   background-color: #503e33;
 }
 
-.rating p {
+.rating-1 p,
+.rating-2 p,
+.rating-3 p {
   padding: 4px 14px;
 
   color: #666666;
@@ -1284,7 +1288,7 @@ a {
   padding-left: 2px;
 }
 
-.hotel:first-child .rating p {
+.rating-1 p {
   margin: 41px 70px 0 0;
 }
 
@@ -1292,7 +1296,7 @@ a {
   margin: 4px 0 0 20px;
 }
 
-.hotel:nth-child(2) .rating p {
+.rating-2 p {
   margin: 41px 70px 0 0;
 }
 
@@ -1300,7 +1304,7 @@ a {
   margin: 4px 0 0 45px;
 }
 
-.hotel:nth-child(3) .rating p {
+.rating-3 p {
   margin: 38px 70px 0 0;
 }
 
@@ -1366,15 +1370,15 @@ a {
   background-color: #5496bd;
 }
 
-.social-media-buttons-list-inner li:first-child a {
+.social-media-button-inner:first-child a {
   padding: 18px 15px 10px 15px;
 }
 
-.social-media-buttons-list-inner li:nth-child(2) a {
+.social-media-button-inner:nth-child(2) a {
   padding: 14px 18px 14px 17px;
 }
 
-.social-media-buttons-list-inner li:last-child a {
+.social-media-button-inner:last-child a {
   padding: 17px 14px 11px 14px;
 }
 
@@ -1390,7 +1394,7 @@ a {
   text-align: center;
 }
 
-.social-media-button-inner > a:active img {
+.social-media-button-inner > a:active {
   opacity: 0.3; 
 }
 
